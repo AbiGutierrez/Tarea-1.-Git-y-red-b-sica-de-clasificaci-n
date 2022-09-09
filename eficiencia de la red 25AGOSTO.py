@@ -15,7 +15,7 @@ test_data=list(test_data)
 
 net=network.Network([784,30,10])
 
-net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
+net.SGD(training_data, 20, 10, 3.5, test_data=test_data)
 
 archivo=open("red_prueba1.pkl",'wb')
 pickle.dump(net, archivo) #dump vaciar de memoria ram a memoria de disco duro
